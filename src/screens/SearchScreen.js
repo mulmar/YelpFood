@@ -24,10 +24,10 @@ const SearchScreen = () => {
       />
       {errorMessage ? <Text>{errorMessage}</Text> : null}
       <ScrollView>
-      <ResultsList results={filterResultsByPrice('€')} title="Goedkoop"/>
-      <ResultsList results={filterResultsByPrice('€€')} title="Normaal"/>
-      <ResultsList results={filterResultsByPrice('€€€')} title="Duur"/>
-      <ResultsList results={filterResultsByPrice('€€€€')} title="Portemonnee leger"/>
+      <ResultsList  results={filterResultsByPrice('€')} title="Goedkoop"/>
+      <ResultsList  results={filterResultsByPrice('€€')} title="Normaal"/>
+      <ResultsList  results={filterResultsByPrice('€€€')} title="Duur"/>
+      <ResultsList  results={filterResultsByPrice('€€€€')} title="Portemonnee leger"/>
       </ScrollView>
     </>
   );
